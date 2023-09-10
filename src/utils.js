@@ -1,0 +1,1 @@
+export function message3() { alert('выводим сообщение по команде в алерт'); }
