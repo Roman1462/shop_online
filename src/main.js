@@ -1,15 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "@/router";
+import store from "./store"
 
-import { message1, message2 } from './constants';
-import { message3 } from './utils';
-
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
-/*
-alert(message1);
-alert(message2);
-message3(); */
+  router,
+  store,
+  render: (h) => h(App),
+}).$mount("#app");
